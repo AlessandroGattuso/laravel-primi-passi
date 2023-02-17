@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/home', function () {
+Route::get('home', function () {
     $pages = [
         'home',
         'second',
@@ -26,7 +26,7 @@ Route::get('/home', function () {
 })->name('home');
 
 
-Route::get('/second', function () {
+Route::get('second', function () {
 
     $pages = [
         'home',
@@ -39,7 +39,7 @@ Route::get('/second', function () {
     return view('second', compact('pages', 'page_chosen'));
 })->name('second');
 
-Route::get('/third', function () {
+Route::get('third', function () {
 
     $pages = [
         'home',
